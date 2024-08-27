@@ -18,8 +18,8 @@ functionalities to manage memberships, track payments, and manage trainer inform
 2. Manage member details and view their status.
 3. Handle payments.
 4. Manage trainer information.
-##Design & Connectivity
-## Backend Design
+## Design & Connectivity
+### Backend Design
 The backend is developed using Python and SQL for database management. The database schema includes tables for gyms, login, members,
 payments, and trainers.
 ### Frontend Design
