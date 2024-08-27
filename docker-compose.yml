@@ -1,0 +1,35 @@
+version: '3.9'
+
+services:
+  php-env:
+    image: php:apache
+    container_name: php1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: 
+      - ./src:/var/www/html
+    ports:
+      - 9000:80
+
+  mysql_db:
+    image: mysql:8.0
+    container_name: mysql1
+    environment:
+      MYSQL_DATABASE: gym
+      MYSQL_USER: monty
+      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: 1234
+    ports:
+      - 3308:3306
+    volumes:
+      - ./data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin1
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: mysql_db
+      MYSQL_ROOT_PASSWORD: root_password
