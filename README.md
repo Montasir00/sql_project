@@ -160,11 +160,13 @@ This compensates for the absence of database-level `ON DELETE CASCADE` constrain
 - One payment → many members
 
 ---
+
 ## Database ER Diagram
 
 <p align="center">
   <img src="src/Database%20ER%20diagram.jpeg" alt="Database ER Diagram" width="700"/>
 </p>
+
 ---
 
 ## Deployment
