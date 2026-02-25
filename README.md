@@ -66,19 +66,19 @@ Administrators can:
 .
 ├── docker-compose.yml
 ├── Dockerfile
-├── data/ # MySQL persistent storage
+├── data/                     # MySQL persistent storage
 ├── src/
-│ ├── config.php # Database connection
-│ ├── index.php # Login system
-│ ├── home.php # Central router/dashboard
-│ ├── logout.php
-│ ├── gym.sql # Database schema
-│ ├── execute_query.php # Initialization queries
-│ ├── add_.php
-│ ├── manage_.php
-│ ├── update_.php
-│ ├── delete_.php
-│ └── *_search.php
+│   ├── config.php            # Database connection
+│   ├── index.php             # Login system
+│   ├── home.php              # Central router / dashboard
+│   ├── logout.php            # Session termination
+│   ├── gym.sql               # Database schema
+│   ├── execute_query.php     # Database initialization queries
+│   ├── add_*.php             # Create operations (Gym, Member, Trainer, Payment)
+│   ├── manage_*.php          # Read/List operations
+│   ├── update_*.php          # Update operations
+│   ├── delete_*.php          # Delete operations
+│   └── *_search.php          # Search functionality
 
 ---
 
