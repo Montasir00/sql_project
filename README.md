@@ -182,7 +182,6 @@ Procedural PHP used for learning clarity
 
 Focus on SQL, schema design, and backend fundamentals
 
-Designed as an academic and portfolio project
 ---
 License
 
