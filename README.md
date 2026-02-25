@@ -1,13 +1,13 @@
-# 🏋️ Gym Management System
+# Gym Management System
 
-## 📌 Overview
+## Overview
 The **Gym Management System** is a web-based administrative application designed to streamline and centralize gym operations. It enables administrators to manage gym locations, members, trainers, and payments through a secure, session-based interface.
 
 The system is built using a **containerized LAMP-style architecture**, ensuring consistent deployment, easy setup, and modular development.
 
 ---
 
-## 🎯 Purpose & Scope
+## Purpose & Scope
 This project demonstrates practical skills in:
 - Relational database design
 - CRUD-based backend development
@@ -18,7 +18,7 @@ The application is intended for **single-admin usage**, focusing on internal gym
 
 ---
 
-## 🧱 System Capabilities
+## System Capabilities
 Administrators can:
 - Manage multiple gym locations
 - Register and manage members
@@ -30,7 +30,7 @@ Administrators can:
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 ### Application Stack
 | Layer | Technology |
@@ -44,7 +44,7 @@ Administrators can:
 
 ---
 
-## 🐳 Containerized Infrastructure
+## Containerized Infrastructure
 
 ### Services
 | Service | Container | Purpose |
@@ -62,7 +62,7 @@ Administrators can:
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 .
 ├── docker-compose.yml
 ├── Dockerfile
@@ -82,7 +82,7 @@ Administrators can:
 
 ---
 
-## 🔐 Authentication
+## Authentication
 - Login handled via `index.php`
 - Credentials validated against `login` table
 - PHP sessions maintain authentication state
@@ -90,7 +90,7 @@ Administrators can:
 
 ---
 
-## 🧩 Core Modules
+## Core Modules
 
 ### CRUD Entity Support
 | Entity | Add | View | Update | Delete | Search |
@@ -102,14 +102,14 @@ Administrators can:
 
 ---
 
-## 🧪 Data Validation
+## Data Validation
 - Primary key uniqueness checks
 - Foreign key existence verification
 - Input sanitization using `mysqli_real_escape_string()`
 
 ---
 
-## 🔗 Cascading Deletes (Manual)
+## Cascading Deletes (Manual)
 To maintain referential integrity:
 - **Deleting a Gym** → deletes members → trainers → payments → gym
 - **Deleting a Trainer** → deletes related members → trainer
@@ -118,7 +118,7 @@ This compensates for the absence of `ON DELETE CASCADE` constraints.
 
 ---
 
-## 🧠 Architecture Overview
+## Architecture Overview
 
 ### Three-Tier Architecture
 **Presentation Layer**
@@ -153,11 +153,12 @@ This compensates for the absence of `ON DELETE CASCADE` constraints.
 
 ---
 
-## 🚀 Deployment
+## Deployment
 Run the project using Docker:
 ```bash
 docker-compose up --build
-📌 Development Notes
+```
+Development Notes
 
 Procedural PHP used for learning clarity
 
@@ -165,6 +166,6 @@ Focus on SQL, schema design, and backend fundamentals
 
 Designed as an academic and portfolio project
 
-📄 License
+License
 
 This project is intended for educational and portfolio use.
