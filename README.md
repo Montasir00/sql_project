@@ -166,6 +166,7 @@ This compensates for the absence of database-level `ON DELETE CASCADE` constrain
   <img src="src/Database%20ER%20diagram.jpeg" alt="Database ER Diagram" width="700"/>
 </p>
 ---
+
 ## Deployment
 
 Run the project using Docker:
