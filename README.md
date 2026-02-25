@@ -61,8 +61,8 @@ Administrators can:
 | 8081 | phpMyAdmin |
 
 ---
-
 ## Project Structure
+
 .
 ├── docker-compose.yml
 ├── Dockerfile
@@ -79,7 +79,6 @@ Administrators can:
 │   ├── update_*.php          # Update operations
 │   ├── delete_*.php          # Delete operations
 │   └── *_search.php          # Search functionality
-
 ---
 
 ## Authentication
